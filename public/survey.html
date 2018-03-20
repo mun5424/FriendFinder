@@ -5,19 +5,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
     <title>FriendFinder</title>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <h2>About You</h2>
+        <div class="form-group">
+            <label for="username">Name (Required) </label>
+            <input type="text" class="form-control" id="username" placeholder="John Smith">
+        </div>
 
+        <div class="form-group">
+            <label for="userphoto_url">Link to Photo Image (Required) </label>
+            <input type="text" class="form-control" id="userphoto_url" placeholder="https://imgur.com/cat">
+        </div>
+
+        <div class="form-group">
+            <h4>Question 1</h4>
+            <p>I am a blunt person. </p>
+            <select class="form-control dropdown" id="answer1">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 2</h4>
+            <p>I take criticism too seriously.</p>
+            <select class="form-control dropdown" id="answer2">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 3</h4>
+            <p>I am a perfectionist. </p>
+            <select class="form-control dropdown" id="answer3">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 4</h4>
+            <p>It is okay to blame someone on a mistake if they do not find out. </p>
+            <select class="form-control dropdown" id="answer4">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 5</h4>
+            <p>I prefer dating at daytime as opposed to nighttime. </p>
+            <select class="form-control dropdown" id="answer5">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 6</h4>
+            <p>I try my best to adjust myself to my surrroundings. </p>
+            <select class="form-control dropdown" id="answer6">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 7</h4>
+            <p>I daydream a lot of times. </p>
+            <select class="form-control dropdown" id="answer7">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 8</h4>
+            <p>I do not get upset easily. </p>
+            <select class="form-control dropdown" id="answer8">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 9</h4>
+            <p>I like to go out on the weekends. </p>
+            <select class="form-control dropdown" id="answer9">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Question 10</h4>
+            <p>I prefer being truthful than to lie to keep a relationship. </p>
+            <select class="form-control dropdown" id="answer10">
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <button class="btn btn-primary btn-lg" id="submit">
+            <span class="glyphicon glyphicon-check"></span> Submit </button>
+
+        <div class="modal" id="matchModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Your Best Match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="bestMatchName"></h2>
+                        <img id="bestMatchURL">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        var username = $("#username").val().trim();
+        var userphoto_url = $("#userphoto_url").val().trim();
+
+        if (username == "") {
+            alert("You must enter your username!");
+            return;
+        }
+        if (userphoto_url == "") {
+            alert("You must enter your photo url!");
+            return;
+        }
+
+        var newFriend = {
+            name: username,
+            photo: userphoto_url,
+            scores: [
+                parseInt($("#answer1").val().substring(0,1)),
+                parseInt($("#answer2").val().substring(0,1)),
+                parseInt($("#answer3").val().substring(0,1)),
+                parseInt($("#answer4").val().substring(0,1)),
+                parseInt($("#answer5").val().substring(0,1)),
+                parseInt($("#answer6").val().substring(0,1)),
+                parseInt($("#answer7").val().substring(0,1)),
+                parseInt($("#answer8").val().substring(0,1)),
+                parseInt($("#answer9").val().substring(0,1)),
+                parseInt($("#answer10").val().substring(0,1))
+            ]
+        };
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+                $("#username").val("");
+                $("#userphoto_url").val("");
+                console.log(newFriend);
+
+                var mostCompatibleFriend;
+                console.log("yay"); 
+                var lowestDifference = Number.MAX_SAFE_INTEGER;
+
+                for (var i = 0; i < data.length; i++) {
+                    var friend = data[i];
+                    var difference = 0;
+                    for (var j = 0; j < friend.scores.length; j++) {
+                        difference += Math.abs(newFriend.scores[j] - friend.scores[j]);
+                    }
+                    if (!mostCompatibleFriend || difference < lowestDifference) {
+                        lowestDifference = difference;
+                        mostCompatibleFriend = friend;
+                    }
+                }
+
+                if (mostCompatibleFriend) {
+                    $("#bestMatchName").text(mostCompatibleFriend.name);
+                    $("#bestMatchURL").attr("src", mostCompatibleFriend.photo);
+                    $("#bestMatchURL").attr("max-width", 400);
+                    $("#matchModal").modal();
+                }
+
+                console.log(mostCompatibleFriend); 
+
+            });
+
+    });
+
+</script>
 
 </html>
