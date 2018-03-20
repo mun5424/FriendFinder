@@ -144,7 +144,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Your Best Match</h5>
+                        <h1 class="modal-title">Your Best Match</h1>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -201,14 +201,13 @@
             function (data) {
                 $("#username").val("");
                 $("#userphoto_url").val("");
-                console.log(newFriend);
 
                 var mostCompatibleFriend;
-                console.log("yay"); 
                 var lowestDifference = Number.MAX_SAFE_INTEGER;
 
                 for (var i = 0; i < data.length; i++) {
                     var friend = data[i];
+                    console.log(data[i]);
                     var difference = 0;
                     for (var j = 0; j < friend.scores.length; j++) {
                         difference += Math.abs(newFriend.scores[j] - friend.scores[j]);
@@ -222,7 +221,7 @@
                 if (mostCompatibleFriend) {
                     $("#bestMatchName").text(mostCompatibleFriend.name);
                     $("#bestMatchURL").attr("src", mostCompatibleFriend.photo);
-                    $("#bestMatchURL").attr("max-width", 400);
+                    $("#bestMatchURL").attr("max-width", "100%");
                     $("#matchModal").modal();
                 }
 
